@@ -37,7 +37,6 @@ a {
 .global_logo {
   font-size: xx-large;
   font-weight: bold;
-
   text-decoration: var(--primary-color) wavy underline;
   text-decoration-thickness: 0.125rem;
 }
@@ -50,6 +49,23 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.icon_hover {
+  display: none;
+}
+
+a:hover .icon_default {
+  display: none;
+}
+
+a:hover .icon_hover {
+  display: block;
+  color: var(--primary-color);
+}
+
+.global_nav li:last-child a:hover .icon_hover {
+  color: inherit;
 }
 
 .global_footer {
