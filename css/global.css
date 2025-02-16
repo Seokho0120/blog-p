@@ -1,1 +1,53 @@
 @import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  max-width: 48rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.global_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+.global_nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.global_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: auto auto 0 auto;
+}
+
+.global_footer-icons {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
