@@ -8,15 +8,16 @@
   </head>
 
   <body>
-    <header class="global_header">
+    <header class="global_header" aria-label="사이트 헤더">
       <h1 class="global_logo">
-        <a href="/">River</a>
+        <a href="/" title="홈으로 이동">River</a>
       </h1>
-      <nav>
+      <nav aria-label="메인 내비게이션">
         <ul class="global_nav">
           <li>
-            <a href="/">
+            <a href="/" title="홈으로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -35,6 +36,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -49,8 +51,9 @@
             </a>
           </li>
           <li>
-            <a href="post.html">
+            <a href="post.html" title="포스트 화면으로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -70,6 +73,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -84,8 +88,9 @@
             </a>
           </li>
           <li>
-            <a href="about.html">
+            <a href="about.html" title="자기소개 페이지로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -100,6 +105,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -116,6 +122,7 @@
           <li>
             <a href="">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -133,6 +140,7 @@
               </svg>
 
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -161,8 +169,9 @@
 
     <footer class="global_footer">
       <div class="global_footer-icons">
-        <a href="mailto:seokho0120@gmail.com">
+        <a href="mailto:seokho0120@gmail.com" title="메일 보내기">
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -175,8 +184,13 @@
           </svg>
         </a>
 
-        <a href="https://github.com/Seokho0120" target="_blank">
+        <a
+          href="https://github.com/Seokho0120"
+          target="_blank"
+          title="깃허브로 이동"
+        >
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"

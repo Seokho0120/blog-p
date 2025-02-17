@@ -17,15 +17,16 @@
   </head>
 
   <body>
-    <header class="global_header">
+    <header class="global_header" aria-label="사이트 헤더">
       <h1 class="global_logo">
-        <a href="/">River</a>
+        <a href="/" title="홈으로 이동">River</a>
       </h1>
-      <nav>
+      <nav aria-label="메인 내비게이션">
         <ul class="global_nav">
           <li>
-            <a href="/">
+            <a href="/" title="홈으로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -44,6 +45,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -58,8 +60,9 @@
             </a>
           </li>
           <li>
-            <a href="post.html">
+            <a href="post.html" title="포스트 화면으로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -79,6 +82,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -93,8 +97,9 @@
             </a>
           </li>
           <li>
-            <a href="about.html">
+            <a href="about.html" title="자기소개 페이지로 이동">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -109,6 +114,7 @@
 
               <!-- 클릭했을때 아이콘 -->
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -125,6 +131,7 @@
           <li>
             <a href="">
               <svg
+                aria-hidden="true"
                 class="icon_default"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -142,6 +149,7 @@
               </svg>
 
               <svg
+                aria-hidden="true"
                 class="icon_hover"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -166,6 +174,7 @@
 
     <main>
       <!-- 소개 -->
+      <h2 class="intro_profile">Profile</h2>
       <section class="intro">
         <div class="intro_dot_container">
           <div></div>
@@ -205,34 +214,43 @@
       <section class="carousel">
         <h2>All Posts</h2>
         <div class="carousel_container">
-          <div class="carousel_item">
-            <h2>Peach Bloom (아키텍처 / 데이터 구조)</h2>
-            <h3>아키텍처와 데이터 구조에 대한 고민..</h3>
-            <p>2023-12-03</p>
-          </div>
-          <div class="carousel_item">
-            <h2>Peach Bloom (아키텍처 / 데이터 구조)</h2>
-            <h3>아키텍처와 데이터 구조에 대한 고민..</h3>
-            <p>2023-12-03</p>
-          </div>
-          <div class="carousel_item">
-            <h2>Peach Bloom (아키텍처 / 데이터 구조)</h2>
-            <h3>아키텍처와 데이터 구조에 대한 고민..</h3>
-            <p>2023-12-03</p>
-          </div>
-          <div class="carousel_item">
-            <h2>Peach Bloom (아키텍처 / 데이터 구조)</h2>
-            <h3>아키텍처와 데이터 구조에 대한 고민..</h3>
-            <p>2023-12-03</p>
-          </div>
+          <article class="carousel_item">
+            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </article>
+          <article class="carousel_item">
+            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </article>
+          <article class="carousel_item">
+            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </article>
+          <article class="carousel_item">
+            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="global_footer">
       <div class="global_footer-icons">
-        <a href="mailto:seokho0120@gmail.com">
+        <a href="mailto:seokho0120@gmail.com" title="메일 보내기">
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -245,8 +263,13 @@
           </svg>
         </a>
 
-        <a href="https://github.com/Seokho0120" target="_blank">
+        <a
+          href="https://github.com/Seokho0120"
+          target="_blank"
+          title="깃허브로 이동"
+        >
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
