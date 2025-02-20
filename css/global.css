@@ -45,10 +45,6 @@ a {
   color: var(--primary-color);
 }
 
-a:is(:link, :active, :visited).active {
-  color: var(--primary-color);
-}
-
 .global_nav {
   display: flex;
   align-items: center;
@@ -59,27 +55,13 @@ a:is(:link, :active, :visited).active {
   display: none;
 }
 
-.active_icon.active {
-  display: block;
+a:is(:link, :active, :visited).active {
   color: var(--primary-color);
 }
 
-/* .active_icon {
-  display: none;
-}
-
-a:hover .basic_icon {
-  display: none;
-}
-
-a:hover .active_icon {
-  display: block;
-  color: var(--primary-color);
-} */
-
-.global_nav li:last-child a:hover .active_icon {
+/* .global_nav li:last-child a:hover .active_icon .basic_icon {
   color: inherit;
-}
+} */
 
 .global_footer {
   display: flex;
