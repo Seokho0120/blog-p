@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
     <title>About - River Blog</title>
+
+    <script defer src="./src/navigation.js"></script>
   </head>
 
   <body>
-    <header class="global_header" aria-label="사이트 헤더">
+  <header class="global_header" aria-label="사이트 헤더">
       <h1 class="global_logo">
-        <a href="/" title="홈으로 이동">River</a>
+        <a href="/index.html"" title="홈으로 이동">River</a>
       </h1>
       <nav aria-label="메인 내비게이션">
         <ul class="global_nav">
           <li>
-            <a href="/" title="홈으로 이동">
+            <a href="/index.html"" class="nav-link" title="홈으로 이동">
               <svg
                 aria-hidden="true"
-                class="icon_default"
+                class="basic_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -37,7 +39,7 @@
               <!-- 클릭했을때 아이콘 -->
               <svg
                 aria-hidden="true"
-                class="icon_hover"
+                class="active_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -51,10 +53,10 @@
             </a>
           </li>
           <li>
-            <a href="post.html" title="포스트 화면으로 이동">
+            <a href="/post.html" class="nav-link" title="포스트 화면으로 이동">
               <svg
                 aria-hidden="true"
-                class="icon_default"
+                class="basic_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -74,7 +76,7 @@
               <!-- 클릭했을때 아이콘 -->
               <svg
                 aria-hidden="true"
-                class="icon_hover"
+                class="active_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -88,10 +90,14 @@
             </a>
           </li>
           <li>
-            <a href="about.html" title="자기소개 페이지로 이동">
+            <a
+              href="/about.html"
+              class="nav-link"
+              title="자기소개 페이지로 이동"
+            >
               <svg
                 aria-hidden="true"
-                class="icon_default"
+                class="basic_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -106,7 +112,7 @@
               <!-- 클릭했을때 아이콘 -->
               <svg
                 aria-hidden="true"
-                class="icon_hover"
+                class="active_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -120,10 +126,28 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <svg
+                aria-hidden="true"
+                class="basic_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992zm5 1a2 2 0 0 0 2 2a2 2 0 0 0-2 2a2 2 0 0 0-2-2a2 2 0 0 0 2-2m2 7h2m-1-1v2"
+                />
+              </svg>
+
+            <!-- <a href="">
               <svg
                 aria-hidden="true"
-                class="icon_default"
+                class="basic_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -141,7 +165,7 @@
 
               <svg
                 aria-hidden="true"
-                class="icon_hover"
+                class="active_icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -157,7 +181,7 @@
                   />
                 </g>
               </svg>
-            </a>
+            </a> -->
           </li>
         </ul>
       </nav>

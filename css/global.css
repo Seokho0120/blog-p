@@ -45,26 +45,39 @@ a {
   color: var(--primary-color);
 }
 
+a:is(:link, :active, :visited).active {
+  color: var(--primary-color);
+}
+
 .global_nav {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.icon_hover {
+.active_icon {
   display: none;
 }
 
-a:hover .icon_default {
-  display: none;
-}
-
-a:hover .icon_hover {
+.active_icon.active {
   display: block;
   color: var(--primary-color);
 }
 
-.global_nav li:last-child a:hover .icon_hover {
+/* .active_icon {
+  display: none;
+}
+
+a:hover .basic_icon {
+  display: none;
+}
+
+a:hover .active_icon {
+  display: block;
+  color: var(--primary-color);
+} */
+
+.global_nav li:last-child a:hover .active_icon {
   color: inherit;
 }
 
