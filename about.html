@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/lnb.css" />
     <title>About - River Blog</title>
 
     <script defer src="./src/navigation.js"></script>
@@ -188,7 +189,124 @@
     </header>
 
     <main>
-      <section>About</section>
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar_header">
+          <a href="#" class="header_logo">
+            <img src="./images/favicon.ico" alt="River">
+          </a>
+          <button class="sidebar_toggler">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06z" clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+        </header>
+
+        <nav class="sidebar_nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav_list primary_nav">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25zm0 9.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18zM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25zm0 9.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18z" />
+                  </svg>
+                </span>
+                <span class="nav_label">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                  </svg>
+                </span>
+                <span class="nav_label">Services</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 17v-5.2c-.5.1-1 .2-1.5.2H17v6H7v-7c0-2.8 2.2-5 5-5c.1-1.3.7-2.4 1.5-3.3c-.3-.4-.9-.7-1.5-.7c-1.1 0-2 .9-2 2v.3C7 5.2 5 7.9 5 11v6l-2 2v1h18v-1zm-9 4c0 1.1.9 2 2 2s2-.9 2-2zM21 6.5c0 1.9-1.6 3.5-3.5 3.5S14 8.4 14 6.5S15.6 3 17.5 3S21 4.6 21 6.5" />
+                  </svg>
+                </span>
+                <span class="nav_label">Notifications</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 4.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M16 6a3 3 0 1 1 2.525 2.963l-2.038 3.358a3 3 0 0 1-4.75 3.65l-3.741 1.87Q8 17.919 8 18a3 3 0 1 1-.465-1.606l3.531-1.765a3 3 0 0 1 4.276-3.313l1.798-2.962A3 3 0 0 1 16 6m-2 6.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m-9 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3" />
+                  </svg>
+                </span>
+                <span class="nav_label">Resources</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.56.56 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.56.56 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.56.56 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.56.56 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.56.56 0 0 0 .475-.345z" />
+                  </svg>
+                </span>
+                <span class="nav_label">Bookmarks</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M8.8 21H5q-.825 0-1.412-.587T3 19v-3.8q1.2 0 2.1-.762T6 12.5t-.9-1.937T3 9.8V6q0-.825.588-1.412T5 4h4q0-1.05.725-1.775T11.5 1.5t1.775.725T14 4h4q.825 0 1.413.588T20 6v4q1.05 0 1.775.725T22.5 12.5t-.725 1.775T20 15v4q0 .825-.587 1.413T18 21h-3.8q0-1.25-.787-2.125T11.5 18t-1.912.875T8.8 21M5 19h2.125q.6-1.65 1.925-2.325T11.5 16t2.45.675T15.875 19H18v-6h2q.2 0 .35-.15t.15-.35t-.15-.35T20 12h-2V6h-6V4q0-.2-.15-.35t-.35-.15t-.35.15T11 4v2H5v2.2q1.35.5 2.175 1.675T8 12.5q0 1.425-.825 2.6T5 16.8zm6.5-6.5" />
+                  </svg>
+                </span>
+                <span class="nav_label">Extensions</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                      <path d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93c.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204s.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78c-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107c-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93c-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204s-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78c.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107s.71-.505.78-.929z" />
+                      <path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0" />
+                    </g>
+                  </svg>
+                </span>
+                <span class="nav_label">Settings</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Secondary Bottom Nav -->
+          <ul class="nav_list secondary_nav">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 7.519c1.172-1.025 3.071-1.025 4.243 0c1.171 1.025 1.171 2.687 0 3.712q-.308.268-.67.442c-.746.361-1.452.999-1.452 1.827v.75M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9 5.25h.008v.008H12z" />
+                  </svg>
+                </span>
+                <span class="nav_label">Support</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <path fill="currentColor" fill-rule="evenodd" d="M2 4.75A2.75 2.75 0 0 1 4.75 2h3a2.75 2.75 0 0 1 2.75 2.75v.5a.75.75 0 0 1-1.5 0v-.5c0-.69-.56-1.25-1.25-1.25h-3c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h3c.69 0 1.25-.56 1.25-1.25v-.5a.75.75 0 0 1 1.5 0v.5A2.75 2.75 0 0 1 7.75 14h-3A2.75 2.75 0 0 1 2 11.25zm9.47.47a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 1 1-1.06-1.06l.97-.97H5.25a.75.75 0 0 1 0-1.5h7.19l-.97-.97a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+                </svg>
+                </span>
+                <span class="nav_label">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
     </main>
 
     <footer class="global_footer">
@@ -229,5 +347,7 @@
       </div>
       <p>© 2025 River All Rights Reserved.</p>
     </footer>
+
+    <script type="module" src="./src/lnb.js" defer></script>
   </body>
 </html>
