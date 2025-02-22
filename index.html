@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
     <title>River Blog</title>
 
     <script type="module" src="./src/navigation.js" defer></script>
@@ -236,60 +237,55 @@
       </section>
 
       <!-- 캐러셀 -->
-      <section class="carousel">
+      <section class="carousel_wrapper">
         <h2>All Posts</h2>
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-          </div>
-          <div class="carousel-slide">
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-            <div class="box">Box 6</div>
-          </div>
-          <div class="carousel-slide">
-            <div class="box">Box 7</div>
-            <div class="box">Box 8</div>
-            <div class="box">Box 9</div>
-          </div>
-        </div>
-        <div class="carousel-buttons">
-          <button id="prev"><</button>
-          <button id="next">></button>
-        </div>
 
-        <!-- <div class="carousel_container">
-          <article class="carousel_item">
-            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+        <button id="prev">prev</button>
+        <ul class="carousel">
+          <li class="card" draggable="false">
+            <h3>11 Peach Bloom (아키텍처 / 데이터 구조)</h3>
             <p>아키텍처와 데이터 구조에 대한 고민..</p>
             <time datetime="2023-12-03" aria-label="2023년 12월 3일"
               >2023년 12월 3일</time
             >
-          </article>
-          <article class="carousel_item">
-            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+          </li>
+          <li class="card" draggable="false">
+            <h3>22 Peach Bloom (아키텍처 / 데이터 구조)</h3>
             <p>아키텍처와 데이터 구조에 대한 고민..</p>
             <time datetime="2023-12-03" aria-label="2023년 12월 3일"
               >2023년 12월 3일</time
             >
-          </article>
-          <article class="carousel_item">
-            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+          </li>
+          <li class="card" draggable="false">
+            <h3>33 Peach Bloom (아키텍처 / 데이터 구조)</h3>
             <p>아키텍처와 데이터 구조에 대한 고민..</p>
             <time datetime="2023-12-03" aria-label="2023년 12월 3일"
               >2023년 12월 3일</time
             >
-          </article>
-          <article class="carousel_item">
-            <h3>Peach Bloom (아키텍처 / 데이터 구조)</h3>
+          </li>
+          <li class="card" draggable="false">
+            <h3>44 Peach Bloom (아키텍처 / 데이터 구조)</h3>
             <p>아키텍처와 데이터 구조에 대한 고민..</p>
             <time datetime="2023-12-03" aria-label="2023년 12월 3일"
               >2023년 12월 3일</time
             >
-          </article>
-        </div> -->
+          </li>
+          <li class="card" draggable="false">
+            <h3>55 Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </li>
+          <li class="card" draggable="false">
+            <h3>66 Peach Bloom (아키텍처 / 데이터 구조)</h3>
+            <p>아키텍처와 데이터 구조에 대한 고민..</p>
+            <time datetime="2023-12-03" aria-label="2023년 12월 3일"
+              >2023년 12월 3일</time
+            >
+          </li>
+        </ul>
+        <button id="next">next</button>
       </section>
     </main>
 
