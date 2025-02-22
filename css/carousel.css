@@ -18,10 +18,9 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 60%;
-  height: 40px;
-  width: 40px;
-  font-size: 12px;
+  top: 55%;
+  height: 26px;
+  width: 26px;
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -31,19 +30,30 @@
   cursor: pointer;
 }
 
-.carousel_wrapper button:first-child {
-  left: -22px;
+.carousel_wrapper button:nth-of-type(1) {
+  left: -12px;
+}
+
+.carousel_wrapper button:nth-of-type(2) {
+  right: -12px;
+}
+
+/* TODO: 버튼중 첫번째 자식에 적용되는줄 알았는데 안됨 */
+/* .carousel_wrapper button:first-child {
+  left: -12px;
 }
 
 .carousel_wrapper button:last-child {
-  right: -22px;
+  right: -12px;
+} */
+
+.carousel_wrapper button:active {
+  transform: translateY(-50%) scale(0.8);
 }
 
 .carousel {
   display: flex;
   gap: 0.625rem;
-  padding: 0.625rem;
-  /* overflow: hidden; */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -75,9 +85,10 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
+  margin-bottom: 18px;
   border-radius: 0.375rem;
-  border-top: 0.0625rem solid #f3f4f6;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid #f3f4f6;
+  box-shadow: 0 0.2rem 0.375rem rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
