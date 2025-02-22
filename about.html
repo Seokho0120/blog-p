@@ -189,6 +189,15 @@
     </header>
 
     <main>
+      <!-- Mobile Sidebar Menu Button -->
+      <button class="sidebar_menu_button">
+        <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+        </svg>
+        </span>
+      </button>
+
       <aside class="sidebar">
         <!-- Sidebar Header -->
         <header class="sidebar_header">
@@ -216,16 +225,42 @@
                 </span>
                 <span class="nav_label">Dashboard</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Dashboard</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link">
-                <span>
+            <!-- Dropdown -->
+            <li class="nav_item dropdown_container">
+              <a href="#" class="nav_link dropdown_toggle">
+                <span >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                   </svg>
                 </span>
-                <span class="nav_label">Services</span>
+                <span class="nav_label">Services</span> 
+                <span class="dropdown_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor" fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+                  </svg>
+                </span>
               </a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Services</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">IT Consulting</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">Cloud Solutions</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">Mobile Apps</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="#" class="nav_link">
@@ -236,6 +271,11 @@
                 </span>
                 <span class="nav_label">Notifications</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Notifications</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="#" class="nav_link">
@@ -246,16 +286,42 @@
                 </span>
                 <span class="nav_label">Resources</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Resources</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link">
-                <span>
+            <!-- Dropdown -->
+            <li class="nav_item dropdown_container">
+              <a href="#" class="nav_link dropdown_toggle">
+                <span >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.56.56 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.56.56 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.56.56 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.56.56 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.56.56 0 0 0 .475-.345z" />
                   </svg>
                 </span>
-                <span class="nav_label">Bookmarks</span>
+                <span class="nav_label">Bookmarks</span> 
+                <span class="dropdown_icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="currentColor" fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+                  </svg>
+                </span>
               </a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Bookmarks</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">Saved Tutorials</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">Favorite Blogs</a>
+                </li>
+                <li class="nav_item">
+                  <a href="#" class="nav_link dropdown_link">Resource Guides</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="#" class="nav_link">
@@ -266,6 +332,11 @@
                 </span>
                 <span class="nav_label">Extensions</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Extensions</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="#" class="nav_link">
@@ -279,6 +350,11 @@
                 </span>
                 <span class="nav_label">Settings</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Settings</a>
+                </li>
+              </ul>
             </li>
           </ul>
 
@@ -293,6 +369,11 @@
                 </span>
                 <span class="nav_label">Support</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Support</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="#" class="nav_link">
@@ -303,6 +384,11 @@
                 </span>
                 <span class="nav_label">Sign Out</span>
               </a>
+              <ul class="dropdown_menu">
+                <li class="nav_item">
+                  <a class="nav_link dropdown_title">Sign Out</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
